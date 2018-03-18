@@ -11,5 +11,7 @@ using convenient APIs in high level languages (currently supported *Python* and 
 - [STM32F072 port source code](https://github.com/gexpander/gex-f072)
 - [Python client](https://github.com/gexpander/gex-client-py)
 
+Documentation and the Wireless functionality will be published as soon as it's ready.
+
 See [github.com/gexpander](https://github.com/gexpander) for more
 

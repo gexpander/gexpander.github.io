@@ -4,7 +4,7 @@ GEX ("GPIO Expander") is a open-source software and hardware platform built for 
 
 GEX was developed for [MightyPork](https://www.ondrovo.com/)'s [Master's Thesis][thesis] (submitted in May, 2018) and remains in active development to support more hardware platforms and improve its functionality. 
 
-The hardware modules developed for GEX are not currently available for sale, but I'm working on making it happen at some point.
+The hardware modules developed for GEX are not currently available for sale, but I'm working on making it happen at some point. The complete Altium projects, as well as exported gerbers, are free to download and e.g. order from OSHPark.
 
 **GEX Zero**, re-using the RPi Zero form factor to support pHATs and RPi Zero cases<br>
 ![photo](zero.jpg)
@@ -12,7 +12,7 @@ The hardware modules developed for GEX are not currently available for sale, but
 **GEX Wireless Dongle** for GEX Zero (with nRF24L01+)<br>
 ![photo](rfdongle.jpg)
 
-### List of Features
+## Features
 
 Probably everyone working with embedded electronics had, at some point, enough of writing single-purpose firmwares just to try something out. GEX is not the first and certainly not the last universal tool developed to make this easier. So, what sets it aside? 
 
@@ -50,7 +50,7 @@ The currently used hardware platform is STM32F072; STM32F103 (bluepill) was used
 **GEX Hub**, with a full break-out of the available GPIOs<br>
 ![photo](hub.jpg)
 
-### Learn more
+## Learn more
 
 Here are some resources:
 

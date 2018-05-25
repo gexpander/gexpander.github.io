@@ -1,19 +1,16 @@
 ## GEX
 
-**GEX Zero**<br>
-![photo](zero.jpg)
-
-**GEX Hub**<br>
-![photo](hub.jpg)
-
-**GEX Wireless Dongle**<br>
-![photo](rfdongle.jpg)
-
 GEX ("GPIO Expander") is a open-source software and hardware platform built for STM32 microcontrollers that brings the Raspberry Pi-like GPIO header to the PC. The header functions as a set of GPIO pins, but the microcontroller's peripoheral blocks may also be used for higher-level functions, like digital buses (SPI, I2C, or USART), analog signal acquisition, waveform generation, PWM generation and measurement, frequency measurement, and more.
 
 GEX was developed for [MightyPork](https://www.ondrovo.com/)'s [Master's Thesis][thesis] (submitted in May, 2018) and remains in active development to support more hardware platforms and improve its functionality. 
 
 The hardware modules developed for GEX are not currently available for sale, but I'm working on making it happen at some point.
+
+**GEX Zero**, re-using the RPi Zero form factor to support pHATs and RPi Zero cases<br>
+![photo](zero.jpg)
+
+**GEX Wireless Dongle** for GEX Zero (with nRF24L01+)<br>
+![photo](rfdongle.jpg)
 
 ### List of Features
 
@@ -49,6 +46,9 @@ Here are some key points:
 GEX is powerful, but also large and it needs more testing before it can be declared "finished". It is currently in version 1.0.0 (as of the thesis submission), but it should be still considered beta.
 
 The currently used hardware platform is STM32F072; STM32F103 (bluepill) was used early in the development for testing, and it will be supported again after the F072 improvements are ported. Other platforms may be added later. I also want to explore the possibility of implementing GEX on the ESP32, which would certainly be very exciting.
+
+**GEX Hub**, with a full break-out of the available GPIOs<br>
+![photo](hub.jpg)
 
 ### Learn more
 

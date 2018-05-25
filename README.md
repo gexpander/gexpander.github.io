@@ -1,59 +1,67 @@
 ## GEX
 
-*This project is still under development, please check back in a couple months!*
+**GEX Zero**<br>
+![photo](zero.jpg)
 
-![photo](photo.jpg?x)
+**GEX Hub**<br>
+![photo](hub.jpg)
 
-GEX is [MightyPork](https://www.ondrovo.com/)'s hobby project developed for his 
-electrical engineering master's thesis. The project is and will remain open source.
+**GEX Wireless Dongle**<br>
+![photo](rfdongle.jpg)
 
-There *may* be a way for you to order a GEX board in the future. However, for now, there are just a few experimental prototypes.
+GEX ("GPIO Expander") is a open-source software and hardware platform built for STM32 microcontrollers that brings the Raspberry Pi-like GPIO header to the PC. The header functions as a set of GPIO pins, but the microcontroller's peripoheral blocks may also be used for higher-level functions, like digital buses (SPI, I2C, or USART), analog signal acquisition, waveform generation, PWM generation and measurement, frequency measurement, and more.
 
-### What is GEX
+GEX was developed for [MightyPork](https://www.ondrovo.com/)'s [Master's Thesis][thesis] (submitted in May, 2018) and remains in active development to support more hardware platforms and improve its functionality. 
 
-Probably everyone working with embedded electronics got at some point enough of writing 
-single purpose firmwares just to try something out. As a result, there are certainly dozens 
-of projects like this, universal GPIO tools that attach to the computer.
+The hardware modules developed for GEX are not currently available for sale, but I'm working on making it happen at some point.
 
-GEX is not the first and most certainly not the last such tool. What sets it aside?
-Well, ... it's not finished yet, but when it is, it'll be very powerful and flexible. Here are some key points:
+### List of Features
 
-- Python and C library (planned MATLAB)
-- LibUSB or Virtual Comport access
-- Cross-platform support (thanks to PyUSB)
-- Well documented protocol (um.. TODO)
-- Wireless connection (planned) using a dongle or WiFi
-- Microsecond-accurate event timestamps
+Probably everyone working with embedded electronics had, at some point, enough of writing single-purpose firmwares just to try something out. GEX is not the first and certainly not the last universal tool developed to make this easier. So, what sets it aside? 
+
+Here are some key points:
+
+- Python and C library (MATLAB with the Python integration)
+- LibUSB or Virtual COM port access
+- Hardware UART or wireless connection instead of USB
+- Cross-platform support thanks to PyUSB and PySerial
+- Well documented protocol (see the [thesis][thesis])
+- Microsecond-accurate asynchronous event timestamps (e.g. pin change detection)
 - DFU firmware upload
-- Virtual FAT16 filesystem (mass storage) with INI config files
+- Virtual FAT16 file system (mass storage) with INI config files (appears as a USB flash disk)
 - FreeRTOS core
 - *Wide range of supported protocols, buses and features*
   - SPI
   - I2C
-  - UART,USART
+  - UART, USART
   - 1-Wire
   - NeoPixel
   - Touch sensing
   - ADC with oscilloscope-like features
   - DAC with DDS waveform synthesis
   - PWM generation
-  - Frequency and pulse measurement
+  - Frequency, pulse, and duty cycle measurement
+  - Pulse counting
   - Raw GPIO input, output 
   - GPIO pulse output
   - GPIO pin change events
 
-GEX is powerful. It's also large, could be a bit faster, and needs more documentation.
+GEX is powerful, but also large and it needs more testing before it can be declared "finished". It is currently in version 1.0.0 (as of the thesis submission), but it should be still considered beta.
 
-I'm working on it :o)
+The currently used hardware platform is STM32F072; STM32F103 (bluepill) was used early in the development for testing, and it will be supported again after the F072 improvements are ported. Other platforms may be added later. I also want to explore the possibility of implementing GEX on the ESP32, which would certainly be very exciting.
 
 ### Learn more
 
 Here are some resources:
 
+- [Thesis download page][thesis] (with attachments)
 - [Hardware](https://github.com/gexpander/gex-hardware)
-- [STM32F072 port source code](https://github.com/gexpander/gex-f072)
+- [STM32F072 firmware](https://github.com/gexpander/gex-f072)
+- [Wireless dongle firmware](https://github.com/gexpander/gex-nrf-dongle)
 - [Python client](https://github.com/gexpander/gex-client-py)
+- [C client](https://github.com/gexpander/gex-client-c)
 
-Documentation and the Wireless functionality will be published when it's ready.
+See [github.com/gexpander](https://github.com/gexpander) for other related repositories.
 
-See [github.com/gexpander](https://github.com/gexpander) for other repositories
+
+[thesis]: https://www.ondrovo.com/cvut/dp/

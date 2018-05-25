@@ -45,12 +45,18 @@ Here are some key points:
 
 GEX is powerful, but also large and it needs more testing before it can be declared "finished". It is currently in version 1.0.0 (as of the thesis submission), but it should be still considered beta.
 
-The currently used hardware platform is STM32F072; STM32F103 (bluepill) was used early in the development for testing, and it will be supported again after the F072 improvements are ported. Other platforms may be added later. I also want to explore the possibility of implementing GEX on the ESP32, which would certainly be very exciting.
+## Hardware Platforms
+
+- The currently used hardware platform is **STM32F072**
+- STM32F103 (bluepill) was used early in the development for testing, and I want to re-add support later, as this is currently the cheapest way to deploy GEX
+- GEX can also be used with the **STM32F072 Discovery** development board.
+
+Other platforms may be added in the future. I also want to explore the possibility of implementing GEX on the ESP32, which would certainly be very exciting. As the project is open-source, feel free to try porting it to anything else as well.
 
 **GEX Hub**, with a full break-out of the available GPIOs<br>
 ![photo](hub.jpg)
 
-## Learn more
+## Learn More
 
 Here are some resources:
 
